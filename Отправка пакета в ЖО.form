@@ -1,0 +1,389 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_sj5wlnb",
+  "components": [
+    {
+      "label": "Контекст",
+      "components": [
+        {
+          "label": "Номер списка",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0bsvjc9",
+            "columns": null
+          },
+          "id": "Field_1x1bxj9",
+          "key": "listNumber",
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата списка",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0514zim",
+            "columns": null
+          },
+          "id": "Field_0o2zzjj",
+          "key": "listDate",
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата основания исключения",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_15d3cyr",
+            "columns": null
+          },
+          "id": "Field_0jbal8o",
+          "key": "basisDate",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_1hs11qi",
+        "columns": null
+      },
+      "id": "Field_10s3c38"
+    },
+    {
+      "label": "Пакет отправки",
+      "components": [
+        {
+          "label": "ФИО",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0utqzd7",
+            "columns": null
+          },
+          "id": "Field_1s365xt",
+          "key": "fullName",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "личный номер",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1s3q8vh",
+            "columns": null
+          },
+          "id": "Field_0lcfi3m",
+          "key": "personalNumber",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Пол",
+          "values": [
+            {
+              "label": "Мужщина",
+              "value": "value"
+            },
+            {
+              "label": "Женщина",
+              "value": "value2"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_14bsjj5",
+            "columns": null
+          },
+          "id": "Field_1xgy843",
+          "key": "gender",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата рождения",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_13x5fwp",
+            "columns": null
+          },
+          "id": "Field_0g2la9y",
+          "key": "birthDate",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Место рождения",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0tzb4a0",
+            "columns": null
+          },
+          "id": "Field_0c5jicu",
+          "key": "birthPlace",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Номер паспорта",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_192tp3z",
+            "columns": null
+          },
+          "id": "Field_1d6eu4y",
+          "key": "passportNumber",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Кем выдан паспорт",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0xz0w66",
+            "columns": null
+          },
+          "id": "Field_1pfey9l",
+          "key": "passportIssuedBy",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата выдачи паспорта",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0glfpl9",
+            "columns": null
+          },
+          "id": "Field_13tj05r",
+          "key": "passportIssueDate",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Основание для исключения из реестра",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_18sxy0j",
+            "columns": null
+          },
+          "id": "Field_09t183e",
+          "key": "exclusionReason",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Регистрационный номер участника НИС",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1lv0755",
+            "columns": null
+          },
+          "id": "Field_180w6lk",
+          "key": "nisRegNumber",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Основание права на использование накоплений",
+          "values": [
+            {
+              "label": "20 лет и более",
+              "value": "value"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (предельный возраст)",
+              "value": "value2"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (ограниченно годен",
+              "value": "value3"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (ОШМ)",
+              "value": "value4"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (семейные)",
+              "value": "value5"
+            },
+            {
+              "label": "гибель/смерть",
+              "value": "value6"
+            },
+            {
+              "label": "увольнение (не годен)",
+              "value": "value7"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_0u1xz0n",
+            "columns": null
+          },
+          "id": "Field_0nslnal",
+          "key": "savingsRightGround",
+          "readonly": true
+        },
+        {
+          "label": "Статья увольнения",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1lh0j9p",
+            "columns": null
+          },
+          "id": "Field_17pxptj",
+          "key": "dismissalArticle",
+          "readonly": true
+        },
+        {
+          "label": "Общая выслуга",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1k3i6vt",
+            "columns": null
+          },
+          "id": "Field_04y958m",
+          "key": "serviceTotal",
+          "readonly": true
+        },
+        {
+          "label": "Наименование и адрес военного комиссариата",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_1ofcx8u",
+            "columns": null
+          },
+          "id": "Field_0lye7v2",
+          "key": "milCommissariat",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата возникновения основания для исключения из реестра",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_1hx4dxd",
+            "columns": null
+          },
+          "id": "Field_1lm86ph",
+          "key": "unitExclusionDate",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0fv12ma",
+        "columns": null
+      },
+      "id": "Field_1yti5a8"
+    },
+    {
+      "label": "Реквизиты отправки",
+      "components": [
+        {
+          "label": "Способ направления в ЖО",
+          "values": [
+            {
+              "label": "Курьер",
+              "value": "value"
+            },
+            {
+              "label": "Письмо",
+              "value": "value2"
+            },
+            {
+              "label": "Электронная почта",
+              "value": "value3"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_115wwrt",
+            "columns": null
+          },
+          "id": "Field_07umtro",
+          "key": "DeliveryMethod",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Исходящий №",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1dflzj8",
+            "columns": null
+          },
+          "id": "Field_0v5xqwc",
+          "key": "OutgoingRef",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата/время отправки",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0o2n378",
+            "columns": null
+          },
+          "id": "Field_0ergw2h",
+          "key": "SentAt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_1o3f7zn",
+            "columns": null
+          },
+          "id": "Field_15jcj7b",
+          "key": "textarea_4w2b6g"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0bssn0x",
+        "columns": null
+      },
+      "id": "Field_06skemq"
+    }
+  ],
+  "type": "default"
+}

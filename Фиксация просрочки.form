@@ -1,0 +1,164 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_yfeg91h",
+  "components": [
+    {
+      "label": "Фиксация просрочки",
+      "components": [
+        {
+          "subtype": "date",
+          "dateLabel": "Дата фиксации",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_1yb2pn2",
+            "columns": null
+          },
+          "id": "Field_0qoymhm",
+          "key": "b2OverdueDetectedAt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Причина просрочки",
+          "values": [
+            {
+              "label": "нет исходных данных/документов",
+              "value": "value"
+            },
+            {
+              "label": "неполный пакет",
+              "value": "value2"
+            },
+            {
+              "label": "отсутствие ответственного",
+              "value": "value3"
+            },
+            {
+              "label": "Value 4",
+              "value": "организационный сбой"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_0tit4ma",
+            "columns": null
+          },
+          "id": "Field_0yr5j6s",
+          "key": "b2OverdueReason",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_1tshr5d",
+            "columns": null
+          },
+          "id": "Field_0r689x4",
+          "key": "b2OverdueComment"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_1xuqreb",
+        "columns": null
+      },
+      "id": "Field_18lt690"
+    },
+    {
+      "label": "Действия",
+      "components": [
+        {
+          "label": "Действие по факту просрочки",
+          "values": [
+            {
+              "label": "уведомить начальника кадрового органа",
+              "value": "value"
+            },
+            {
+              "label": "уведомить командира",
+              "value": "value2"
+            },
+            {
+              "label": "зарегистрировать инцидент/нарушение",
+              "value": "value3"
+            },
+            {
+              "label": "запросить помощь/данные",
+              "value": "value4"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_1ihzjhj",
+            "columns": null
+          },
+          "id": "Field_10qpf38",
+          "key": "select_2fu56j",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Кому направлено уведомление",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1revl4l",
+            "columns": null
+          },
+          "id": "Field_10ihmpx",
+          "key": "b2OverdueNotifiedTo",
+          "description": "ФИО/должность",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Реквизиты служебной записки/письма",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_00sp7c5",
+            "columns": null
+          },
+          "id": "Field_0tkka6z",
+          "key": "b2OverdueDocRef",
+          "description": "№, дата",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Подтверждаю фиксацию просрочки",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_0eydzu0",
+            "columns": null
+          },
+          "id": "Field_1k3dxdr",
+          "key": "b2OverdueAck",
+          "validate": {
+            "required": true
+          }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0abi5r0",
+        "columns": null
+      },
+      "id": "Field_1qi4f97"
+    }
+  ],
+  "type": "default"
+}

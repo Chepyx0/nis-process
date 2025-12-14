@@ -1,0 +1,138 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_right_to_use_savings",
+  "components": [
+    {
+      "label": "Контекст",
+      "components": [
+        {
+          "label": "Номер приказа об исключении",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0a83frb",
+            "columns": null
+          },
+          "id": "Field_0k7ndso",
+          "key": "orderNumber",
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата приказа",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0p8yas1",
+            "columns": null
+          },
+          "id": "Field_02g6tp1",
+          "key": "orderDate",
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата исключения из списков",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_1cbdup5",
+            "columns": null
+          },
+          "id": "Field_0ghgyv7",
+          "key": "unitExclusionDate",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0kt8of8",
+        "columns": null
+      },
+      "id": "Field_0n04z28"
+    },
+    {
+      "label": "Право на накопления",
+      "components": [
+        {
+          "label": "Основание на использование накоплений",
+          "values": [
+            {
+              "label": "20 лет и более",
+              "value": "value"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (ограниченно годен)",
+              "value": "value2"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (ОШМ)",
+              "value": "value3"
+            },
+            {
+              "label": "увольнение при выслуге 10+ (семейные)",
+              "value": "value4"
+            },
+            {
+              "label": "гибель/смерть",
+              "value": "value5"
+            },
+            {
+              "label": "увольнение (не годен)",
+              "value": "value6"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_1t4csc1",
+            "columns": null
+          },
+          "id": "Field_1ulic63",
+          "key": "art10Ground",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Общая выслуга лет",
+          "type": "number",
+          "layout": {
+            "row": "Row_09osbjh",
+            "columns": null
+          },
+          "id": "Field_193hwja",
+          "key": "serviceYearsTotal",
+          "validate": {
+            "required": true,
+            "min": ""
+          }
+        },
+        {
+          "label": "Статья увольнения",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0pgv1c1",
+            "columns": null
+          },
+          "id": "Field_1crjn50",
+          "key": "dismissalArticle",
+          "validate": {
+            "required": true
+          }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_12ozdvp",
+        "columns": null
+      },
+      "id": "Field_080finu"
+    }
+  ],
+  "type": "default"
+}

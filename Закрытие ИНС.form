@@ -1,0 +1,75 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_1wpso9y",
+  "components": [
+    {
+      "label": "Закрытие счета",
+      "components": [
+        {
+          "subtype": "date",
+          "dateLabel": "Дата/время закрытия ИНС",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0ysh0ib",
+            "columns": null
+          },
+          "id": "Field_15whv4e",
+          "key": "datetime_1hrr2g",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Реквизиты операции/решения о закрытии",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_00bel8w",
+            "columns": null
+          },
+          "id": "Field_0luzhqe",
+          "key": "textfield_s8dr74",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Средства возвращены в федеральный бюджет",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_1aipggo",
+            "columns": null
+          },
+          "id": "Field_0e5kh2o",
+          "key": "checkbox_rklllk",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_0fzideq",
+            "columns": null
+          },
+          "id": "Field_1g3tyfo",
+          "key": "textarea_7sv6r"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_09f41yn",
+        "columns": null
+      },
+      "id": "Field_0ehbrby"
+    }
+  ],
+  "type": "default"
+}

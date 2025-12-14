@@ -1,0 +1,80 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_0ndd6u5",
+  "components": [
+    {
+      "label": "Group",
+      "components": [
+        {
+          "label": "Реквизиты уведомления",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1rl2yg2",
+            "columns": null
+          },
+          "id": "Field_1qomzqr",
+          "key": "NoticeRef",
+          "description": "№/дата",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Куда направлено",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0931hgj",
+            "columns": null
+          },
+          "id": "Field_0gny7q5",
+          "key": "ToHousingUnit",
+          "description": "подразделение ЖО",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата/время отправки в ЖО",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0vq9ywq",
+            "columns": null
+          },
+          "id": "Field_09f631q",
+          "key": "NoticeSentAt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_00w9f14",
+            "columns": null
+          },
+          "id": "Field_1234wj2",
+          "key": "textarea_8bviyj",
+          "validate": {
+            "required": false
+          }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0702jf1",
+        "columns": null
+      },
+      "id": "Field_0nl0gkf"
+    }
+  ],
+  "type": "default"
+}

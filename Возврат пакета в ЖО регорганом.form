@@ -1,0 +1,184 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_vfwufdh",
+  "components": [
+    {
+      "label": "Реквезиты отправки",
+      "components": [
+        {
+          "label": "Подготовлен бумажный экземпляр",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_0qexcdm",
+            "columns": null
+          },
+          "id": "Field_07zbu29",
+          "key": "PaperCopyPrepared",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Подготовлен электронный носитель",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_1n6j6t7",
+            "columns": null
+          },
+          "id": "Field_14pf4ki",
+          "key": "ElectronicCarrierPrepared",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Приложены электронные копии документов",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_04vmkt3",
+            "columns": null
+          },
+          "id": "Field_03c79ck",
+          "key": "ElectronicDocsAttached",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Применена ЭЦП",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_1b02exr",
+            "columns": null
+          },
+          "id": "Field_1tin1zp",
+          "key": "EdsOrIntegrityApplied",
+          "description": "средства контроля отсутствия искажений",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Номер документа",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_00yv9xq",
+            "columns": null
+          },
+          "id": "Field_1rx1tlm",
+          "key": "OutgoingRef",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата отправки",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0pnhz3f",
+            "columns": null
+          },
+          "id": "Field_00wvu0j",
+          "key": "datetime_xkoeq",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_1tggaua",
+            "columns": null
+          },
+          "id": "Field_15753sg",
+          "key": "SendComment",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_1u33j9m",
+        "columns": null
+      },
+      "id": "Field_09orccg"
+    },
+    {
+      "label": "Причина возврата",
+      "components": [
+        {
+          "label": "Причины возврата",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1keok1q",
+            "columns": null
+          },
+          "id": "Field_0yn3sij",
+          "key": "ReturnReason",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Исходящий номер возврата",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0yshlph",
+            "columns": null
+          },
+          "id": "Field_1sf98pm",
+          "key": "ReturnOutgoingRef",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата/время отправки возврата",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_03qtz0y",
+            "columns": null
+          },
+          "id": "Field_0sohvdu",
+          "key": "ReturnedAt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_06d9yie",
+            "columns": null
+          },
+          "id": "Field_1wjea51",
+          "key": "ReturnComment"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0jvhr3x",
+        "columns": null
+      },
+      "id": "Field_109lisv"
+    }
+  ],
+  "type": "default"
+}

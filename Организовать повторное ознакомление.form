@@ -1,0 +1,162 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_ogik5vx",
+  "components": [
+    {
+      "label": "",
+      "components": [
+        {
+          "label": "Реквизиты уведомления",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1rl2yg2",
+            "columns": null
+          },
+          "id": "Field_1qomzqr",
+          "key": "NoticeRef",
+          "description": "№/дата",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Реквизиты внесения записи в личную карточку",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0931hgj",
+            "columns": null
+          },
+          "id": "Field_0gny7q5",
+          "key": "CardEntryRef",
+          "validate": {
+            "required": false
+          },
+          "readonly": true
+        },
+        {
+          "label": "Номер попытки ознакомления",
+          "type": "number",
+          "layout": {
+            "row": "Row_0aea3uu",
+            "columns": null
+          },
+          "id": "Field_02sbgwi",
+          "key": "AttemptNo",
+          "validate": {
+            "required": true,
+            "min": "2"
+          }
+        },
+        {
+          "label": "Причина, почему подпись не получена в прошлый раз",
+          "values": [
+            {
+              "label": "не явился(ась)",
+              "value": "value"
+            },
+            {
+              "label": "не удалось связаться",
+              "value": "value2"
+            },
+            {
+              "label": "отказ от подписи",
+              "value": "value3"
+            },
+            {
+              "label": "оспитализация/болезнь",
+              "value": "value4"
+            },
+            {
+              "label": "адрес/контакты недостоверны",
+              "value": "value5"
+            },
+            {
+              "label": "Иное",
+              "value": "value6"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_0oorb1x",
+            "columns": null
+          },
+          "id": "Field_1daep9n",
+          "key": "select_2jf7qt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Коментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_1b4mz9k",
+            "columns": null
+          },
+          "id": "Field_1t5sw4s",
+          "key": "textarea_sfclvc"
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Планируемая дата повторного ознакомления",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_158a58z",
+            "columns": null
+          },
+          "id": "Field_0o0yikf",
+          "key": "PlannedAt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Способ организации повторного ознакомления",
+          "values": [
+            {
+              "label": "приглашение явиться лично",
+              "value": "value"
+            },
+            {
+              "label": "телефонный звонок",
+              "value": "value2"
+            },
+            {
+              "label": "письменное уведомление (почта/курьер)",
+              "value": "value3"
+            },
+            {
+              "label": "электронная почта",
+              "value": "value4"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_0w1sl8f",
+            "columns": null
+          },
+          "id": "Field_1m1lhki",
+          "key": "e4Method",
+          "validate": {
+            "required": true
+          }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0702jf1",
+        "columns": null
+      },
+      "id": "Field_0nl0gkf"
+    }
+  ],
+  "type": "default"
+}

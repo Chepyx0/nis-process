@@ -1,0 +1,108 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_xs6lt2r",
+  "components": [
+    {
+      "label": "Данные ЖО",
+      "components": [
+        {
+          "label": "Наименование подразделения жилищного обесепечения ",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0ys7x3c",
+            "columns": null
+          },
+          "id": "Field_0lg1m2k",
+          "key": "housingUnitName",
+          "readonly": true
+        },
+        {
+          "label": "Номер сводного списка",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1g0y0e0",
+            "columns": null
+          },
+          "id": "Field_0rsxpkk",
+          "key": "ConsolidatedListNumber",
+          "readonly": true
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата создания списка",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_1ve2vcu",
+            "columns": null
+          },
+          "id": "Field_1wo2qyn",
+          "key": "ConsolidatedListDate",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_09tl6zd",
+        "columns": null
+      },
+      "id": "Field_1ienlh6"
+    },
+    {
+      "label": "Реквизиты записи",
+      "components": [
+        {
+          "subtype": "date",
+          "dateLabel": "Дата/время внесения записи в реестр",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0ozk46d",
+            "columns": null
+          },
+          "id": "Field_0duew4i",
+          "key": "RegistryEntryAt",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Реквизиты записи/рег. действия",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_17xzvlq",
+            "columns": null
+          },
+          "id": "Field_0d50ehh",
+          "key": "RegistryEntryRef",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Комментарий",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_0qijkbr",
+            "columns": null
+          },
+          "id": "Field_0wku5fp",
+          "key": "RegistryEntryComment"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_0sdqhmn",
+        "columns": null
+      },
+      "id": "Field_0linvqs"
+    }
+  ],
+  "type": "default"
+}

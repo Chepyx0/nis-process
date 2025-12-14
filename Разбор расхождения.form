@@ -1,0 +1,190 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "fd2b2b2"
+  },
+  "schemaVersion": 19,
+  "id": "Form_ja80kse",
+  "components": [
+    {
+      "label": "Приказ/основание",
+      "components": [
+        {
+          "label": "№ приказа",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0zbr64j",
+            "columns": null
+          },
+          "id": "Field_0745nex",
+          "key": "orderNumber",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата приказа",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_1h16usr",
+            "columns": null
+          },
+          "id": "Field_1bmayvv",
+          "key": "orderDate",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата исключения из списков личного состава",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_03bhfae",
+            "columns": null
+          },
+          "id": "Field_16psb2c",
+          "key": "unitExclusionDate",
+          "validate": {
+            "required": true
+          }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_1vwndlx",
+        "columns": null
+      },
+      "id": "Field_0kggsws"
+    },
+    {
+      "label": "НИС",
+      "components": [
+        {
+          "label": "Военнослужащий является участником НИС?",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_0xt4hcn",
+            "columns": null
+          },
+          "id": "Field_0mxhcfc",
+          "key": "nisIsParticipant",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "label": "Регистрационный номер участника НИС",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_12zudn7",
+            "columns": null
+          },
+          "id": "Field_0bxyb0j",
+          "key": "nisRegNumber",
+          "conditional": {
+            "hide": "=nisIsParticipant = false"
+          },
+          "properties": { },
+          "validate": {
+            "pattern": "",
+            "required": true
+          }
+        },
+        {
+          "label": "В приказе отражена принадлежность к НИС",
+          "type": "checkbox",
+          "layout": {
+            "row": "Row_0yeett8",
+            "columns": null
+          },
+          "id": "Field_0dexhyt",
+          "key": "orderContainsNisMark",
+          "validate": {
+            "required": true
+          }
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_1xm4ip3",
+        "columns": null
+      },
+      "id": "Field_1bkwbyn"
+    },
+    {
+      "label": "Основание исключения из реестра",
+      "components": [
+        {
+          "label": "Основание исключения из реестра",
+          "values": [
+            {
+              "label": "увольнение с военной службы",
+              "value": "dismissal"
+            },
+            {
+              "label": "смерть/гибель/признание безвестно отсутствующим/умершим",
+              "value": "death"
+            },
+            {
+              "label": "исполнение обязательств государства по обеспечению жильём/средствами",
+              "value": "state_obligation_fulfilled"
+            },
+            {
+              "label": "выявлено отсутствие оснований включения",
+              "value": "no_grounds_found"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_1ytm2o4",
+            "columns": null
+          },
+          "id": "Field_1ojgbrv",
+          "key": "exclusionReasonCode",
+          "validate": {
+            "required": true
+          }
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "Дата возникновения основания для исключения из реестра",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0osimc7",
+            "columns": null
+          },
+          "id": "Field_10u0jee",
+          "key": "basisDate",
+          "validate": {
+            "required": true
+          },
+          "description": "Для увольнения = дата исключения из списков"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_08c1ybu",
+        "columns": null
+      },
+      "id": "Field_00x3bi6"
+    },
+    {
+      "label": "Комментарий/примечание",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1jf0ovf",
+        "columns": null
+      },
+      "id": "Field_02iu2yq",
+      "key": "verificationComment"
+    }
+  ],
+  "type": "default"
+}
